@@ -1,0 +1,163 @@
+{
+  "project_info": {
+    "name": "Cinthya Nascimento Advocacia",
+    "type": "Institutional Website / Lead Generation",
+    "target_audience": "Individuals in Brazil needing urgent legal help (especially criminal), workers, retirees, and citizens with various legal demands.",
+    "primary_goal": "Lead generation via WhatsApp",
+    "tone": "Professional, Trustworthy, Approachable, Urgent",
+    "contact": {
+      "whatsapp": "(91) 99840-1830",
+      "email": "cinthyanascimentoadv@gmail.com",
+      "oab": "OAB/PA 38.939"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Playfair Display (Serif)",
+      "body": "Manrope (Sans-serif)"
+    },
+    "rules": [
+      "DO NOT use generic fonts like Inter, Roboto, or Open Sans for headings. Use Playfair Display to convey legal authority and tradition.",
+      "Headings (H1, H2, H3) MUST use tight letter spacing (tracking-tight or tracking-tighter) and elegant weights (font-medium to font-bold).",
+      "Body text MUST use Manrope with generous line height (leading-relaxed) for maximum readability, especially for older demographics (retirees).",
+      "Overlines/Labels (e.g., 'ÁREAS DE ATUAÇÃO') MUST be uppercase, small text, with wide tracking (tracking-[0.2em])."
+    ]
+  },
+  "colors": {
+    "theme": "High-End Corporate / Editorial (Light default with stark dark contrast sections)",
+    "palette": {
+      "brand_primary": "#0F172A",
+      "brand_secondary": "#1E293B",
+      "accent_gold": "#C5A059",
+      "whatsapp_green": "#25D366",
+      "background_light": "#F8F9FA",
+      "surface_white": "#FFFFFF",
+      "text_main": "#111827",
+      "text_muted": "#4B5563"
+    },
+    "rules": [
+      "Avoid default 'SaaS Blue'. Use the deep Midnight Blue (#0F172A) to anchor the design and communicate seriousness.",
+      "Use the Accent Gold (#C5A059) sparingly for subtle luxury (e.g., borders, small icons, hover underlines).",
+      "CRITICAL: The primary conversion goal is WhatsApp. Use the official WhatsApp Green (#25D366) for the fixed floating button and primary direct-contact CTAs. Ensure high contrast (white text/icon) on the green button.",
+      "Never use pure black (#000000); use #0F172A instead to keep the design alive."
+    ]
+  },
+  "visual_enhancers": {
+    "surfaces": [
+      "Glassmorphism (The 'Crystal' Variant) MUST be used for the sticky navigation header: bg-white/80 backdrop-blur-md border-b border-gray-200. NEVER use completely transparent backgrounds where content scrolls underneath.",
+      "Solid Dark Backgrounds (bg-slate-900) for the Hero (if image overlay) and Footer sections to create stark contrast and authority.",
+      "Subtle 1px borders (border-gray-200) for grid items and cards to maintain a crisp, technical legal look without heavy shadows."
+    ],
+    "shadows": [
+      "Avoid heavy drop shadows. Use subtle ambient shadows (shadow-sm or shadow-md) mixed with crisp borders."
+    ]
+  },
+  "grids_layouts": {
+    "spacing": "Generous Spacing Philosophy. Use p-8, p-12, py-20, py-24 for section padding to give breathing room. Legal matters are stressful; the design must feel calm and structured.",
+    "practice_areas_bento": [
+      "Use 'MODE A: THE TETRIS GRID' for the Practice Areas section on the Home Page.",
+      "Base Grid: grid-cols-1 md:grid-cols-12 gap-6.",
+      "Make 'Direito Criminal' and 'Penal Militar' (the urgent areas) span larger sections (e.g., col-span-full md:col-span-8 row-span-2).",
+      "Other areas (Cível, Trabalhista, etc.) can be smaller squares (col-span-4).",
+      "This asymmetry creates visual interest over a standard 3-column list."
+    ],
+    "general": [
+      "Mobile-First Responsive layout is mandatory.",
+      "Max width containers (max-w-7xl) to keep content constrained and readable.",
+      "Images MUST NOT exceed 80vh on mobile."
+    ]
+  },
+  "motion": {
+    "rules": [
+      "Use framer-motion for elegant, serious entrance animations (fade in and slight translate-y upward).",
+      "Hover states on practice area cards: slight lift (-translate-y-1) and a subtle border color change to Accent Gold.",
+      "Button interactions: scale-up slightly on hover, active state scale-down.",
+      "CRITICAL: Respect prefers-reduced-motion for accessibility."
+    ]
+  },
+  "accessibility": {
+    "rules": [
+      "Minimum 4.5:1 contrast ratio for all text.",
+      "Buttons MUST have clear focus states (e.g., focus:ring-2 focus:ring-offset-2 focus:ring-brand_primary).",
+      "All interactive elements MUST include a 'data-testid' attribute (e.g., data-testid='whatsapp-floating-button').",
+      "Form inputs must have visible labels and clear error states."
+    ]
+  },
+  "image_urls": [
+    {
+      "category": "Hero Background / Legal Authority",
+      "url": "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg",
+      "description": "Brass justice scale and gavel on a wooden desk, symbolizing law and justice. Use with a dark overlay (bg-slate-900/70) so white hero text is readable."
+    },
+    {
+      "category": "Hero Alternative / Practice Areas",
+      "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f",
+      "description": "Statue of lady justice. Good for abstract representation of the firm's values."
+    },
+    {
+      "category": "About Section / Office",
+      "url": "https://images.unsplash.com/photo-1758630737900-a28682c5aa69",
+      "description": "Modern office interior. Represents the firm's environment."
+    },
+    {
+      "category": "Lawyer Placeholder",
+      "url": "https://images.pexels.com/photos/7651571/pexels-photo-7651571.jpeg",
+      "description": "Professional woman in modern office. Use this as a temporary placeholder for Cinthya Nascimento until her real photo is provided."
+    },
+    {
+      "category": "Courthouse / Public Law",
+      "url": "https://images.unsplash.com/photo-1678117367116-efb97dfc4183",
+      "description": "Large courthouse building with columns. Good for 'Direito Público' or background textures."
+    }
+  ],
+  "components_and_pages": {
+    "global": [
+      "Sticky Navbar: Logo placeholder (left), Navigation Links (center, hidden on mobile), WhatsApp CTA (right), Mobile Menu Toggle.",
+      "Floating WhatsApp Button: Fixed bottom-right. High z-index. MUST animate/pulse gently to attract attention for urgent queries.",
+      "Footer: Dark background, large elegant typography, contact info, OAB number, fast links."
+    ],
+    "pages": {
+      "Home": [
+        "Hero: Full-height or 80vh. High-impact image background with dark overlay. H1: 'Defesa Jurídica Especializada e Urgente'. Subtitle: 'Atendimento humanizado em todo o Brasil'. CTA: 'Falar com Especialista Agora' (WhatsApp link).",
+        "Practice Areas (Bento Grid): Highlight Criminal, Military Penal, Civil, Social Security, Labor, Tax, Public.",
+        "Differentials: 3-column grid with Lucide icons (National Coverage, Urgent Focus, Clear Language).",
+        "About Teaser: Image left, text right. Button: 'Conheça nossa história'.",
+        "How it Works: Simple 3-step process (Contato > Análise > Ação).",
+        "Final CTA: Large block, dark background, compelling text to contact via WhatsApp."
+      ],
+      "AreasDeAtuacao": [
+        "Header: Simple text header.",
+        "Grid: Detailed cards for all 7 areas with specific descriptions. Each card has a 'Tirar Dúvida' WhatsApp button."
+      ],
+      "Sobre": [
+        "Deep dive into Cinthya's history, the OAB/PA 38.939 credential, mission, and values.",
+        "Use the Lawyer Placeholder image here alongside the text."
+      ],
+      "Contato": [
+        "Split layout: Left side with direct contact info (WhatsApp, Email, Operating Hours), Right side with a Shadcn-based Contact Form."
+      ]
+    }
+  },
+  "instructions_to_main_agent": {
+    "tech_stack": "React (using .js files, NOT .tsx), Tailwind CSS, Framer Motion, Lucide React, Shadcn/ui.",
+    "icon_library": "Use lucide-react (already standard with Shadcn).",
+    "component_creation": [
+      "Use raw HTML/Tailwind for structural marketing layouts to allow asymmetrical creativity.",
+      "Use Shadcn components ONLY for interactive logic (Forms, Inputs, Buttons, Dialogs) but heavily customize their Tailwind classes to match the 'High-End Corporate' theme.",
+      "Do not use generic Card components if they force a rigid equal-grid look. Build custom divs for the Bento Grid."
+    ]
+  },
+  "universal_guidelines_for_main_agent": [
+    "NEVER create generic centered layouts, simplistic gradients, or uniform styling.",
+    "DO NOT apply universal transitions (e.g., transition: all). Target specific properties.",
+    "DO NOT center align the app container (.App { text-align: center; }). It disrupts reading flow.",
+    "Use 2-3x more spacing than feels comfortable to ensure the design looks expensive and calm.",
+    "All interactive elements MUST have micro-animations and clearly defined hover/active/focus states.",
+    "Create depth through layered elements and z-index hierarchy.",
+    "Always use 'data-testid' on interactive elements for testing.",
+    "Ensure all text color contrasts pass accessibility checks, particularly when text sits over images or dark backgrounds.",
+    "DO NOT use emojis as icons. Always use proper SVG icons from lucide-react.",
+    "Use .js extension for React component files, not .tsx.",
+    "The primary goal is Lead Generation: The WhatsApp button must be impossible to miss."
+  ]
+}
