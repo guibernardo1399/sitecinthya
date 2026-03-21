@@ -73,20 +73,20 @@ const Sobre = () => {
             >
               <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">ADVOGADA</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1D23] mb-4 tracking-tight">Dra. Cinthya Nascimento</h2>
-              <p className="text-lg text-[#5B9A8B] font-semibold mb-6">OAB/PA nº 38.939 | 25 anos</p>
+              <p className="text-lg text-[#5B9A8B] font-semibold mb-6">OAB/PA nº 38.939 | 27 anos</p>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Formada em Direito pelo CESUPA (Centro Universit\u00e1rio do Estado do Par\u00e1), a Dra. Cinthya Nascimento \u00e9 apaixonada por Direito Processual Penal e atua como advogada criminalista.
+                  Formada em Direito pelo CESUPA (Centro Universitário do Estado do Pará), a Dra. Cinthya Nascimento é apaixonada por Direito Processual Penal e atua como advogada criminalista.
                 </p>
                 <p>
-                  Com 25 anos e natural de Bel\u00e9m/PA, Cinthya \u00e9 m\u00e3e, mulher e filha que encontrou no Direito Criminal sua voca\u00e7\u00e3o. Extremamente competitiva, sua filosofia profissional \u00e9 clara: n\u00e3o entra para perder.
+                  Com 27 anos e natural de Belém/PA, Cinthya é mãe, mulher e filha que encontrou no Direito Criminal sua vocação. Extremamente competitiva, sua filosofia profissional é clara: não entra para perder.
                 </p>
                 <p>
-                  Dedica sua carreira \u00e0 defesa dos direitos de seus clientes com seriedade, t\u00e9cnica e humaniza\u00e7\u00e3o, oferecendo atendimento personalizado e estrat\u00e9gico em diversas \u00e1reas do direito, com especial foco em Direito Criminal e Penal Militar.
+                  Dedica sua carreira à defesa dos direitos de seus clientes com seriedade, técnica e humanização, oferecendo atendimento personalizado e estratégico em diversas áreas do direito, com especial foco em Direito Criminal e Penal Militar.
                 </p>
                 <p>
-                  O compromisso com a \u00e9tica, transpar\u00eancia e excel\u00eancia profissional s\u00e3o pilares fundamentais do escrit\u00f3rio Cinthya Nascimento Advocacia.
+                  O compromisso com a ética, transparência e excelência profissional são pilares fundamentais do escritório Cinthya Nascimento Advocacia.
                 </p>
               </div>
 
