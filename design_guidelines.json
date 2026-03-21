@@ -24,11 +24,11 @@
     ]
   },
   "colors": {
-    "theme": "High-End Corporate / Editorial (Light default with stark dark contrast sections)",
+    "theme": "Modern Professional with Graphite & Teal Accents (based on logo palette)",
     "palette": {
-      "brand_primary": "#0F172A",
-      "brand_secondary": "#1E293B",
-      "accent_gold": "#C5A059",
+      "brand_primary": "#1A1D23",
+      "brand_secondary": "#2C3440",
+      "accent_teal": "#5B9A8B",
       "whatsapp_green": "#25D366",
       "background_light": "#F8F9FA",
       "surface_white": "#FFFFFF",
@@ -36,10 +36,10 @@
       "text_muted": "#4B5563"
     },
     "rules": [
-      "Avoid default 'SaaS Blue'. Use the deep Midnight Blue (#0F172A) to anchor the design and communicate seriousness.",
-      "Use the Accent Gold (#C5A059) sparingly for subtle luxury (e.g., borders, small icons, hover underlines).",
+      "Use deep Graphite (#1A1D23) as the primary brand color to anchor the design and communicate professionalism.",
+      "Use the Accent Teal (#5B9A8B) for subtle elegance (e.g., borders, small icons, hover underlines, secondary text).",
       "CRITICAL: The primary conversion goal is WhatsApp. Use the official WhatsApp Green (#25D366) for the fixed floating button and primary direct-contact CTAs. Ensure high contrast (white text/icon) on the green button.",
-      "Never use pure black (#000000); use #0F172A instead to keep the design alive."
+      "Never use pure black (#000000); use #1A1D23 instead to keep the design alive with subtle teal undertones."
     ]
   },
   "visual_enhancers": {

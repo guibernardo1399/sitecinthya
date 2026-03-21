@@ -97,7 +97,7 @@ const AreasDeAtuacao = () => {
   return (
     <div className="min-h-screen pt-20" data-testid="areas-page">
       {/* Header */}
-      <section className="bg-[#0F172A] text-white py-20">
+      <section className="bg-[#1A1D23] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -131,12 +131,12 @@ const AreasDeAtuacao = () => {
                 >
                   <div className="flex items-start gap-4 mb-6">
                     <div className={`p-3 rounded-lg flex-shrink-0 ${
-                      area.urgent ? 'bg-red-50' : 'bg-[#C5A059]/10'
+                      area.urgent ? 'bg-red-50' : 'bg-[#5B9A8B]/10'
                     }`}>
-                      <Icon size={32} className={area.urgent ? 'text-red-600' : 'text-[#C5A059]'} />
+                      <Icon size={32} className={area.urgent ? 'text-red-600' : 'text-[#5B9A8B]'} />
                     </div>
                     <div>
-                      <h2 className="text-2xl font-bold text-[#0F172A] mb-2 tracking-tight">{area.title}</h2>
+                      <h2 className="text-2xl font-bold text-[#1A1D23] mb-2 tracking-tight">{area.title}</h2>
                       {area.urgent && (
                         <span className="inline-block bg-red-100 text-red-700 text-xs px-3 py-1 rounded-full font-semibold">ATENDIMENTO URGENTE</span>
                       )}
@@ -146,11 +146,11 @@ const AreasDeAtuacao = () => {
                   <p className="text-gray-600 leading-relaxed mb-6">{area.description}</p>
                   
                   <div className="mb-6">
-                    <h3 className="text-sm font-semibold text-[#0F172A] uppercase tracking-wide mb-3">O que fazemos:</h3>
+                    <h3 className="text-sm font-semibold text-[#1A1D23] uppercase tracking-wide mb-3">O que fazemos:</h3>
                     <ul className="space-y-2">
                       {area.services.map((service, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-gray-600">
-                          <span className="text-[#C5A059] mt-1 flex-shrink-0">•</span>
+                          <span className="text-[#5B9A8B] mt-1 flex-shrink-0">•</span>
                           <span>{service}</span>
                         </li>
                       ))}
@@ -175,7 +175,7 @@ const AreasDeAtuacao = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#0F172A] text-white">
+      <section className="py-16 bg-[#1A1D23] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight">Não encontrou sua área?</h2>
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">

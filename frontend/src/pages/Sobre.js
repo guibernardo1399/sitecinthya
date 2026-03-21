@@ -31,7 +31,7 @@ const Sobre = () => {
   return (
     <div className="min-h-screen pt-20" data-testid="sobre-page">
       {/* Hero Section */}
-      <section className="bg-[#0F172A] text-white py-20">
+      <section className="bg-[#1A1D23] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ const Sobre = () => {
               transition={{ duration: 0.8 }}
             >
               <img 
-                src="https://images.pexels.com/photos/7651571/pexels-photo-7651571.jpeg" 
+                src="/images/cinthya-profile.jpg" 
                 alt="Dra. Cinthya Nascimento"
                 className="rounded-lg shadow-2xl w-full h-auto object-cover"
                 data-testid="lawyer-photo"
@@ -71,20 +71,35 @@ const Sobre = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-sm uppercase tracking-[0.2em] text-[#C5A059] font-semibold mb-3">ADVOGADA</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-4 tracking-tight">Dra. Cinthya Nascimento</h2>
-              <p className="text-lg text-[#C5A059] font-semibold mb-6">OAB/PA nº 38.939</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">ADVOGADA</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1D23] mb-4 tracking-tight">Dra. Cinthya Nascimento</h2>
+              <p className="text-lg text-[#5B9A8B] font-semibold mb-6">OAB/PA nº 38.939 | 25 anos</p>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Formada em Direito, a Dra. Cinthya Nascimento dedica sua carreira à defesa dos direitos de seus clientes com seriedade, técnica e humanização.
+                  Formada em Direito pelo CESUPA (Centro Universit\u00e1rio do Estado do Par\u00e1), a Dra. Cinthya Nascimento \u00e9 apaixonada por Direito Processual Penal e atua como advogada criminalista.
                 </p>
                 <p>
-                  Com atuação em diversas áreas do direito, o escritório se destaca pelo atendimento personalizado e estratégico, sempre buscando as melhores soluções jurídicas para cada caso.
+                  Com 25 anos e natural de Bel\u00e9m/PA, Cinthya \u00e9 m\u00e3e, mulher e filha que encontrou no Direito Criminal sua voca\u00e7\u00e3o. Extremamente competitiva, sua filosofia profissional \u00e9 clara: n\u00e3o entra para perder.
                 </p>
                 <p>
-                  O compromisso com a ética, transparência e excelência profissional são pilares fundamentais do escritório Cinthya Nascimento Advocacia.
+                  Dedica sua carreira \u00e0 defesa dos direitos de seus clientes com seriedade, t\u00e9cnica e humaniza\u00e7\u00e3o, oferecendo atendimento personalizado e estrat\u00e9gico em diversas \u00e1reas do direito, com especial foco em Direito Criminal e Penal Militar.
                 </p>
+                <p>
+                  O compromisso com a \u00e9tica, transpar\u00eancia e excel\u00eancia profissional s\u00e3o pilares fundamentais do escrit\u00f3rio Cinthya Nascimento Advocacia.
+                </p>
+              </div>
+
+              <div className="mt-6 flex items-center gap-3 text-gray-600">
+                <span className="font-semibold">Instagram:</span>
+                <a 
+                  href="https://instagram.com/cinthyanascimentoadv" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-[#5B9A8B] hover:underline"
+                >
+                  @cinthyanascimentoadv
+                </a>
               </div>
             </motion.div>
           </div>
@@ -97,10 +112,25 @@ const Sobre = () => {
             transition={{ duration: 0.6 }}
             className="bg-white p-12 rounded-lg shadow-lg mb-16"
           >
-            <h2 className="text-3xl font-bold text-[#0F172A] mb-6 text-center tracking-tight">Nossa Missão</h2>
+            <h2 className="text-3xl font-bold text-[#1A1D23] mb-6 text-center tracking-tight">Nossa Missão</h2>
             <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto leading-relaxed">
               Oferecer serviços jurídicos de excelência, com atendimento humanizado, estratégico e eficiente, garantindo a defesa dos direitos e interesses de nossos clientes em todo o Brasil.
             </p>
+          </motion.div>
+
+          {/* Info Graphic Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <img 
+              src="/images/cinthya-info.jpg" 
+              alt="Quem é Cinthya?"
+              className="rounded-lg shadow-2xl w-full max-w-3xl mx-auto h-auto object-cover"
+            />
           </motion.div>
 
           {/* Values */}
@@ -112,8 +142,8 @@ const Sobre = () => {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <p className="text-sm uppercase tracking-[0.2em] text-[#C5A059] font-semibold mb-3">NOSSOS VALORES</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] tracking-tight">O Que Nos Guia</h2>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">NOSSOS VALORES</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1D23] tracking-tight">O Que Nos Guia</h2>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -129,10 +159,10 @@ const Sobre = () => {
                     className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm"
                     data-testid={`value-card-${index}`}
                   >
-                    <div className="inline-flex p-3 bg-[#C5A059]/10 rounded-lg mb-4">
-                      <Icon size={28} className="text-[#C5A059]" />
+                    <div className="inline-flex p-3 bg-[#5B9A8B]/10 rounded-lg mb-4">
+                      <Icon size={28} className="text-[#5B9A8B]" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#0F172A] mb-3 tracking-tight">{value.title}</h3>
+                    <h3 className="text-xl font-bold text-[#1A1D23] mb-3 tracking-tight">{value.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{value.description}</p>
                   </motion.div>
                 );
@@ -143,7 +173,7 @@ const Sobre = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#0F172A] text-white">
+      <section className="py-20 bg-[#1A1D23] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

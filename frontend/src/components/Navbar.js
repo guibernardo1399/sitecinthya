@@ -24,9 +24,14 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center" data-testid="navbar-logo">
-            <div className="text-2xl font-bold text-slate-900 tracking-tight">
-              <span className="text-[#0F172A]">Cinthya Nascimento</span>
-              <span className="text-[#C5A059] ml-2">Advocacia</span>
+            <img 
+              src="/images/logo.jpg" 
+              alt="Cinthya Nascimento Advocacia" 
+              className="h-14 w-14 rounded-full object-cover border-2 border-gray-200"
+            />
+            <div className="ml-3 text-xl font-bold tracking-tight hidden sm:block">
+              <span className="text-[#1A1D23]">Cinthya Nascimento</span>
+              <span className="text-[#5B9A8B] ml-1">Advocacia</span>
             </div>
           </Link>
 
@@ -37,8 +42,8 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 data-testid={`nav-link-${link.name.toLowerCase().replace(/\s/g, '-')}`}
-                className={`text-sm font-medium tracking-wide transition-colors hover:text-[#C5A059] ${
-                  isActive(link.path) ? 'text-[#C5A059]' : 'text-gray-700'
+                className={`text-sm font-medium tracking-wide transition-colors hover:text-[#5B9A8B] ${
+                  isActive(link.path) ? 'text-[#5B9A8B]' : 'text-gray-700'
                 }`}
               >
                 {link.name}
@@ -90,7 +95,7 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   data-testid={`mobile-nav-link-${link.name.toLowerCase().replace(/\s/g, '-')}`}
                   className={`block text-base font-medium py-2 transition-colors ${
-                    isActive(link.path) ? 'text-[#C5A059]' : 'text-gray-700 hover:text-[#C5A059]'
+                    isActive(link.path) ? 'text-[#5B9A8B]' : 'text-gray-700 hover:text-[#5B9A8B]'
                   }`}
                 >
                   {link.name}

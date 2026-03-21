@@ -74,7 +74,7 @@ const Contato = () => {
   return (
     <div className="min-h-screen pt-20" data-testid="contato-page">
       {/* Hero Section */}
-      <section className="bg-[#0F172A] text-white py-20">
+      <section className="bg-[#1A1D23] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -124,19 +124,19 @@ const Contato = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl font-bold text-[#0F172A] mb-8 tracking-tight">Informações de Contato</h2>
+              <h2 className="text-3xl font-bold text-[#1A1D23] mb-8 tracking-tight">Informações de Contato</h2>
               
               <div className="space-y-6">
                 {contactInfo.map((item, index) => {
                   const Icon = item.icon;
                   const content = (
                     <div className="flex items-start gap-4 p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                      <div className="p-3 bg-[#C5A059]/10 rounded-lg flex-shrink-0">
-                        <Icon size={24} className="text-[#C5A059]" />
+                      <div className="p-3 bg-[#5B9A8B]/10 rounded-lg flex-shrink-0">
+                        <Icon size={24} className="text-[#5B9A8B]" />
                       </div>
                       <div>
                         <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">{item.title}</h3>
-                        <p className="text-lg text-[#0F172A] font-medium">{item.value}</p>
+                        <p className="text-lg text-[#1A1D23] font-medium">{item.value}</p>
                       </div>
                     </div>
                   );
@@ -160,7 +160,7 @@ const Contato = () => {
               </div>
 
               <div className="mt-8 p-6 bg-white rounded-lg border border-gray-200">
-                <h3 className="text-lg font-bold text-[#0F172A] mb-2 tracking-tight">OAB/PA nº 38.939</h3>
+                <h3 className="text-lg font-bold text-[#1A1D23] mb-2 tracking-tight">OAB/PA nº 38.939</h3>
                 <p className="text-gray-600">Dra. Cinthya Nascimento - Advogada inscrita na Ordem dos Advogados do Brasil, seção Pará</p>
               </div>
             </motion.div>
@@ -173,12 +173,12 @@ const Contato = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
-                <h2 className="text-3xl font-bold text-[#0F172A] mb-2 tracking-tight">Envie sua Mensagem</h2>
+                <h2 className="text-3xl font-bold text-[#1A1D23] mb-2 tracking-tight">Envie sua Mensagem</h2>
                 <p className="text-gray-600 mb-8">Preencha o formulário e entraremos em contato em breve</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
                   <div>
-                    <Label htmlFor="name" className="text-[#0F172A] font-semibold">Nome Completo *</Label>
+                    <Label htmlFor="name" className="text-[#1A1D23] font-semibold">Nome Completo *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -187,13 +187,13 @@ const Contato = () => {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="Seu nome completo"
-                      className="mt-2 border-gray-300 focus:border-[#C5A059] focus:ring-[#C5A059]"
+                      className="mt-2 border-gray-300 focus:border-[#5B9A8B] focus:ring-[#5B9A8B]"
                       data-testid="contact-name-input"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="phone" className="text-[#0F172A] font-semibold">Telefone *</Label>
+                    <Label htmlFor="phone" className="text-[#1A1D23] font-semibold">Telefone *</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -202,13 +202,13 @@ const Contato = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="(00) 00000-0000"
-                      className="mt-2 border-gray-300 focus:border-[#C5A059] focus:ring-[#C5A059]"
+                      className="mt-2 border-gray-300 focus:border-[#5B9A8B] focus:ring-[#5B9A8B]"
                       data-testid="contact-phone-input"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="email" className="text-[#0F172A] font-semibold">E-mail *</Label>
+                    <Label htmlFor="email" className="text-[#1A1D23] font-semibold">E-mail *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -217,13 +217,13 @@ const Contato = () => {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="seu@email.com"
-                      className="mt-2 border-gray-300 focus:border-[#C5A059] focus:ring-[#C5A059]"
+                      className="mt-2 border-gray-300 focus:border-[#5B9A8B] focus:ring-[#5B9A8B]"
                       data-testid="contact-email-input"
                     />
                   </div>
 
                   <div>
-                    <Label htmlFor="message" className="text-[#0F172A] font-semibold">Mensagem *</Label>
+                    <Label htmlFor="message" className="text-[#1A1D23] font-semibold">Mensagem *</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -232,7 +232,7 @@ const Contato = () => {
                       onChange={handleChange}
                       placeholder="Conte-nos sobre seu caso ou dúvida jurídica..."
                       rows={6}
-                      className="mt-2 border-gray-300 focus:border-[#C5A059] focus:ring-[#C5A059]"
+                      className="mt-2 border-gray-300 focus:border-[#5B9A8B] focus:ring-[#5B9A8B]"
                       data-testid="contact-message-textarea"
                     />
                   </div>
@@ -240,7 +240,7 @@ const Contato = () => {
                   <Button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-[#0F172A] hover:bg-[#1E293B] text-white py-6 text-lg font-semibold rounded-full transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-[#1A1D23] hover:bg-[#2C3440] text-white py-6 text-lg font-semibold rounded-full transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
                     data-testid="contact-submit-button"
                   >
                     {loading ? (

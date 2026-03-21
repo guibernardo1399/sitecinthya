@@ -75,7 +75,7 @@ const Home = () => {
         style={{ backgroundImage: `url('https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg')` }}
         data-testid="hero-section"
       >
-        <div className="absolute inset-0 bg-slate-900/70"></div>
+        <div className="absolute inset-0 bg-[#1A1D23]/70"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -113,8 +113,8 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-[#C5A059] font-semibold mb-3">EXPERTISE JURÍDICA</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">Áreas de Atuação</h2>
+            <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">EXPERTISE JURÍDICA</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A1D23] mb-4 tracking-tight">Áreas de Atuação</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">Cobertura completa em diversas áreas do direito para atender suas necessidades</p>
           </motion.div>
 
@@ -132,14 +132,14 @@ const Home = () => {
                   data-testid={`practice-area-card-${index}`}
                 >
                   <div className={`inline-flex p-3 rounded-lg mb-4 ${
-                    area.urgent ? 'bg-red-50' : 'bg-[#C5A059]/10'
+                    area.urgent ? 'bg-red-50' : 'bg-[#5B9A8B]/10'
                   }`}>
-                    <Icon size={28} className={area.urgent ? 'text-red-600' : 'text-[#C5A059]'} />
+                    <Icon size={28} className={area.urgent ? 'text-red-600' : 'text-[#5B9A8B]'} />
                   </div>
                   {area.urgent && (
                     <span className="inline-block bg-red-100 text-red-700 text-xs px-3 py-1 rounded-full font-semibold mb-3">URGENTE</span>
                   )}
-                  <h3 className="text-xl font-bold text-[#0F172A] mb-3 tracking-tight">{area.title}</h3>
+                  <h3 className="text-xl font-bold text-[#1A1D23] mb-3 tracking-tight">{area.title}</h3>
                   <p className="text-gray-600 leading-relaxed mb-4">{area.description}</p>
                   <a
                     href={`https://wa.me/${whatsappNumber}?text=Olá! Preciso de ajuda com ${area.title}.`}
@@ -159,7 +159,7 @@ const Home = () => {
             <Link
               to="/areas"
               data-testid="view-all-areas-button"
-              className="inline-block bg-[#0F172A] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#1E293B] transition-all hover:scale-105 shadow-lg"
+              className="inline-block bg-[#1A1D23] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2C3440] transition-all hover:scale-105 shadow-lg"
             >
               Ver Todas as Áreas
             </Link>
@@ -177,8 +177,8 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="text-sm uppercase tracking-[0.2em] text-[#C5A059] font-semibold mb-3">DIFERENCIAIS</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] tracking-tight">Por Que Escolher Nosso Escritório</h2>
+            <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">DIFERENCIAIS</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A1D23] tracking-tight">Por Que Escolher Nosso Escritório</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -194,10 +194,10 @@ const Home = () => {
                   className="text-center p-8"
                   data-testid={`differential-card-${index}`}
                 >
-                  <div className="inline-flex p-4 bg-[#C5A059]/10 rounded-full mb-6">
-                    <Icon size={32} className="text-[#C5A059]" />
+                  <div className="inline-flex p-4 bg-[#5B9A8B]/10 rounded-full mb-6">
+                    <Icon size={32} className="text-[#5B9A8B]" />
                   </div>
-                  <h3 className="text-xl font-bold text-[#0F172A] mb-3 tracking-tight">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-[#1A1D23] mb-3 tracking-tight">{item.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{item.description}</p>
                 </motion.div>
               );
@@ -217,8 +217,8 @@ const Home = () => {
               transition={{ duration: 0.8 }}
             >
               <img 
-                src="https://images.pexels.com/photos/7651571/pexels-photo-7651571.jpeg" 
-                alt="Cinthya Nascimento"
+                src="/images/cinthya-profile.jpg" 
+                alt="Dra. Cinthya Nascimento"
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
                 data-testid="about-image"
               />
@@ -229,8 +229,8 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <p className="text-sm uppercase tracking-[0.2em] text-[#C5A059] font-semibold mb-3">SOBRE O ESCRITÓRIO</p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-6 tracking-tight">Comprometimento com a Justiça</h2>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">SOBRE O ESCRITÓRIO</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1D23] mb-6 tracking-tight">Comprometimento com a Justiça</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 O escritório Cinthya Nascimento Advocacia é focado em oferecer atendimento estratégico, humanizado e eficiente em diversas áreas do direito.
               </p>
@@ -240,7 +240,7 @@ const Home = () => {
               <Link
                 to="/sobre"
                 data-testid="about-learn-more-button"
-                className="inline-block bg-[#0F172A] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#1E293B] transition-all hover:scale-105 shadow-lg"
+                className="inline-block bg-[#1A1D23] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#2C3440] transition-all hover:scale-105 shadow-lg"
               >
                 Conheça Nossa História
               </Link>
@@ -258,8 +258,8 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="text-center mb-12">
-            <p className="text-sm uppercase tracking-[0.2em] text-[#C5A059] font-semibold mb-3">PROCESSO</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] tracking-tight">Como Funciona</h2>
+            <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">PROCESSO</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1A1D23] tracking-tight">Como Funciona</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -273,10 +273,10 @@ const Home = () => {
                 className="text-center"
                 data-testid={`how-it-works-step-${index}`}
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#C5A059] text-white text-2xl font-bold rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#5B9A8B] text-white text-2xl font-bold rounded-full mb-4">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold text-[#0F172A] mb-3 tracking-tight">{item.title}</h3>
+                <h3 className="text-xl font-bold text-[#1A1D23] mb-3 tracking-tight">{item.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
@@ -285,7 +285,7 @@ const Home = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-[#0F172A] text-white" data-testid="final-cta-section">
+      <section className="py-20 bg-[#1A1D23] text-white" data-testid="final-cta-section">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
