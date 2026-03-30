@@ -93,12 +93,12 @@ const Sobre = () => {
               <div className="mt-6 flex items-center gap-3 text-gray-600">
                 <span className="font-semibold">Instagram:</span>
                 <a 
-                  href="https://instagram.com/cinthyanascimentoadv" 
+                  href="https://instagram.com/cnadvocacia__" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-[#5B9A8B] hover:underline"
                 >
-                  @cinthyanascimentoadv
+                  @cnadvocacia__
                 </a>
               </div>
             </motion.div>
