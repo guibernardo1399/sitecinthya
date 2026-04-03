@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Scale, Award, Heart, Target, MessageCircle } from 'lucide-react';
+import { Scale, Award, Heart, Target, MessageCircle, Shield } from 'lucide-react';
 
 const Sobre = () => {
   const whatsappNumber = '5591998401830';
@@ -50,6 +50,30 @@ const Sobre = () => {
       {/* Main Content */}
       <section className="py-20 bg-[#F8F9FA]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Mission Section - PRIMEIRO */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="bg-gradient-to-br from-[#1A1D23] to-[#2C3440] text-white p-12 rounded-2xl shadow-2xl mb-20 border border-[#5B9A8B]/20"
+          >
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <Shield size={40} className="text-[#5B9A8B]" />
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Compromisso Profissional</h2>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg sm:text-xl leading-relaxed text-gray-100 text-center mb-6">
+                O escritório é <span className="text-[#5B9A8B] font-semibold">comprometido</span> a prestar todos os serviços jurídicos aqui descritos com o <span className="font-semibold">mais elevado padrão de diligência, ética e profissionalismo</span>, observando integralmente as normas da Ordem dos Advogados do Brasil e os princípios fundamentais que regem a advocacia.
+              </p>
+              <p className="text-lg sm:text-xl leading-relaxed text-gray-100 text-center">
+                A atuação será pautada por <span className="text-[#5B9A8B] font-semibold">transparência, responsabilidade e empenho absoluto</span> na busca da solução mais adequada e vantajosa para os seus interesses.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Profile Section - DEPOIS */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -58,7 +82,7 @@ const Sobre = () => {
               transition={{ duration: 0.8 }}
             >
               <img 
-                src="/images/cinthya-profile.jpg" 
+                src="/images/cinthya-new.jpeg" 
                 alt="Dra. Cinthya Nascimento"
                 className="rounded-lg shadow-2xl w-full h-auto object-cover"
                 data-testid="lawyer-photo"
@@ -73,20 +97,20 @@ const Sobre = () => {
             >
               <p className="text-sm uppercase tracking-[0.2em] text-[#5B9A8B] font-semibold mb-3">ADVOGADA</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#1A1D23] mb-4 tracking-tight">Dra. Cinthya Nascimento</h2>
-              <p className="text-lg text-[#5B9A8B] font-semibold mb-6">OAB/PA nº 38.939 | 27 anos</p>
+              <p className="text-lg text-[#5B9A8B] font-semibold mb-6">OAB/PA nº 38.939</p>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Formada em Direito pelo CESUPA (Centro Universitário do Estado do Pará), a Dra. Cinthya Nascimento é apaixonada por Direito Processual Penal e atua como advogada criminalista.
+                  Formada em Direito pelo CESUPA (Centro Universitário do Estado do Pará), a Dra. Cinthya Nascimento é uma advogada com sólida formação jurídica e paixão pelo Direito.
                 </p>
                 <p>
-                  Com 27 anos e natural de Belém/PA, Cinthya é mãe, mulher e filha que encontrou no Direito Criminal sua vocação. Extremamente competitiva, sua filosofia profissional é clara: não entra para perder.
+                  Natural de Belém/PA, Cinthya é mãe, mulher e filha que encontrou na advocacia sua verdadeira vocação. Com atuação em <span className="font-semibold text-[#1A1D23]">múltiplas áreas do Direito</span> — Criminal, Penal Militar, Cível, Previdenciário, Trabalhista, Tributário e Direito Público — oferece atendimento completo e especializado para cada necessidade jurídica.
                 </p>
                 <p>
-                  Dedica sua carreira à defesa dos direitos de seus clientes com seriedade, técnica e humanização, oferecendo atendimento personalizado e estratégico em diversas áreas do direito, com especial foco em Direito Criminal e Penal Militar.
+                  Extremamente competitiva e determinada, sua filosofia profissional é clara: <span className="font-semibold italic">não entra para perder</span>. Dedica sua carreira à defesa incansável dos direitos de seus clientes com seriedade, técnica e humanização.
                 </p>
                 <p>
-                  O compromisso com a ética, transparência e excelência profissional são pilares fundamentais do escritório Cinthya Nascimento Advocacia.
+                  O compromisso com a ética, transparência e excelência profissional são pilares fundamentais de sua atuação, garantindo que cada cliente receba atendimento personalizado e estratégico.
                 </p>
               </div>
 
@@ -103,35 +127,6 @@ const Sobre = () => {
               </div>
             </motion.div>
           </div>
-
-          {/* Mission Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-white p-12 rounded-lg shadow-lg mb-16"
-          >
-            <h2 className="text-3xl font-bold text-[#1A1D23] mb-6 text-center tracking-tight">Nossa Missão</h2>
-            <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto leading-relaxed">
-              Oferecer serviços jurídicos de excelência, com atendimento humanizado, estratégico e eficiente, garantindo a defesa dos direitos e interesses de nossos clientes em todo o Brasil.
-            </p>
-          </motion.div>
-
-          {/* Info Graphic Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <img 
-              src="/images/cinthya-info.jpg" 
-              alt="Quem é Cinthya?"
-              className="rounded-lg shadow-2xl w-full max-w-3xl mx-auto h-auto object-cover"
-            />
-          </motion.div>
 
           {/* Values */}
           <div>
